@@ -44,3 +44,11 @@ Este comando sirve para "altabear" entre branches.
 Este comando sirve para buscar en todo el repositorio una palabra, más que nada utiliza el archivo `.gitignore` para obviar los archivos que no queremos buscar ya que con cualquier IDE se puede hacer lo mismo hoy en día.
 ### `git branch`
 Este comando muestras un listado de las branches locales y la branch en la que estás trabajando.
+
+---
+## Configuración
+Para configurar el bash utilizar la siguiente línea:
+
+```
+git config --global http.proxy http://<username>:<password>@<proxy-server-url>:<port>
+```
