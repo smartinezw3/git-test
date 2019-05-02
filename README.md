@@ -35,8 +35,12 @@ Sirve para mergear entre branches, digamos que tenemos dos branches: `master` y 
  - `git merge development`
  - `git push` para subir los cambios al repositorio
 
+### `git fetch`
+Sirve para traer todas las branch que están en el repositorio.
 ## Comandos útiles
 ### `git checkout -`
 Este comando sirve para "altabear" entre branches.
 ### `git grep <word>`
 Este comando sirve para buscar en todo el repositorio una palabra, más que nada utiliza el archivo `.gitignore` para obviar los archivos que no queremos buscar ya que con cualquier IDE se puede hacer lo mismo hoy en día.
+### `git branch`
+Este comando muestras un listado de las branches locales y la branch en la que estás trabajando.
