@@ -37,6 +37,10 @@ Sirve para mergear entre branches, digamos que tenemos dos branches: `master` y 
 
 ### `git fetch`
 Sirve para traer todas las branch que están en el repositorio.
+### `git push --delete <remote-name> <branch-name>`
+Para borrar la branch del repositorio.
+### `git branch -d <branch-name>` o `git branch -D <branch-name>`
+Para borrar la branch local. La segunda opción con `-D` es para forzar a que borre sin chequear el estado.
 ## Comandos útiles
 ### `git checkout -`
 Este comando sirve para "altabear" entre branches.
