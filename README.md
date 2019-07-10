@@ -41,6 +41,16 @@ Sirve para traer todas las branch que están en el repositorio.
 Para borrar la branch del repositorio.
 ### `git branch -d <branch-name>` o `git branch -D <branch-name>`
 Para borrar la branch local. La segunda opción con `-D` es para forzar a que borre sin chequear el estado.
+### `git clean -f`
+Para borrar los cambios que no se agregaron.
+```bash
+# Eliminar directorios
+git clean -f -d
+# Eliminar archivos ignorados
+git clean -f -X
+# Eliminar archivos ignorados o no ignorados
+git clean -f -x
+```
 ## Comandos útiles
 ### `git checkout -`
 Este comando sirve para "altabear" entre branches.
