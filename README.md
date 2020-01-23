@@ -21,7 +21,7 @@ Agrega el archivo para el próximo commit.
 Si se necesita agregar todos los cambios se puede utilizar `git add --all` o su versión simplificada `git add -A`.
 #### `git reset HEAD <file-name>`
 Si al agregar todos los archivos, accidentalemente te equivocaste, podés revertir que se agreguen utilizando este comando.
-### `git commit -m "<message>`
+### `git commit -m "<message>"`
 Este comando sirve para commitear los archivos previamente agregados.
 ### `git push`
 Una vez que se encuentran commiteados los archivos, se procede a subir al repositorio. Digamos que es como subir los archivos a la nube.
@@ -59,6 +59,21 @@ Este comando sirve para buscar en todo el repositorio una palabra, más que nada
 ### `git branch`
 Este comando muestras un listado de las branches locales y la branch en la que estás trabajando.
 
+## Guardado temporal
+### `git stash`
+Guarda los cambios temporalmente y los remueve del branch actual.
+#### `git stash push -m "<message>"`
+Guarda los cambios temporalmente pero deja un mensaje a modo de referencia.
+### `git stash apply`
+Aplica el último guardado temporal a la branch actual.
+### `git stash list`
+Muestra el listado de los guardados temporales con índices ascendente, donde `{0}` es el último guardado.
+### `git stash apply <number>`
+Aplica el guardado temporal del `<number>`.
+### `git stash drop <number>`
+Elimina del listado el guardado temporal `<number>`.
+### `git stash pop <number>`
+Aplica el guardado temporal `<number>` y lo elimina del listado.
 ---
 ## Configuración
 Para configurar el bash utilizar la siguiente línea:
