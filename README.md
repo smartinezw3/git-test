@@ -63,7 +63,7 @@ Este comando muestras un listado de las branches locales y la branch en la que e
 ### `git stash`
 Guarda los cambios temporalmente y los remueve del branch actual.
 #### `git stash push -m "<message>"`
-Guarda los cambios temporalmente pero deja un mensaje a modo de referencia.
+Guarda los cambios temporalmente y deja un mensaje a modo de referencia.
 ### `git stash apply`
 Aplica el último guardado temporal a la branch actual.
 ### `git stash list`
@@ -74,6 +74,7 @@ Aplica el guardado temporal del `<number>`.
 Elimina del listado el guardado temporal `<number>`.
 ### `git stash pop <number>`
 Aplica el guardado temporal `<number>` y lo elimina del listado.
+
 ---
 ## Configuración
 Para configurar el bash utilizar la siguiente línea:
